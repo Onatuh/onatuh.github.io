@@ -55,10 +55,7 @@ a:hover {
     -webkit-transform: scale(1.2); 
 }
 
-/* Bootstrap */
-
-
-/* Wrappers and Headers */
+/* General CSS */
 
 .aboutWrapper,
 .contactWrapper {
@@ -87,9 +84,36 @@ a:hover {
     margin-bottom: -1rem;
 }
 
-/* Navigation */
+.mainTitle {
+    align-items: center;
+}
 
-@media (max-width: 768px) {
+.aboutText {
+    padding: 1rem;
+}
+
+.aboutImage {
+    max-width: 90%;
+    -webkit-transform: scaleX(-1);
+    float: left;
+}
+
+.contactLabel {
+    font-size: small;
+    padding: .2rem;
+    margin-bottom: .75rem;
+}
+
+.contactContainer {
+    margin: 0 auto;
+}
+
+
+/* Media Screen Size Change */
+
+/* Tablet */
+
+@media (max-width: 1023px) {
     .landingContent {
         display: flex;
         max-width: min-content;
@@ -101,36 +125,9 @@ a:hover {
     .mainLogo {
         max-width: 100%;
     }
-}
-
-@media (min-width: 1024px) {
-    .mainLogo {
-        max-width: 50%;
-        padding-top: 2rem;
-        display: inline-flex;
-    }
-    .mainTitle {
-        max-width: fit-content;
-        display: inline-flex;
-        line-height: 1.5em;
-        vertical-align: middle;
-    }
-    .nav-link {
-        font-size: 1.2em;
-        font-family: 'Bebas Neue', cursive;
-    }
-}
-
-.mainTitle {
-    align-items: center;
-}
-
-/* About */
-
-@media (max-width: 768px) {
     .aboutTitle,
     .contactHeader {
-        padding: 1rem;
+        padding: .2rem;
         font-weight: 500;
     }
     .aboutImage {
@@ -138,49 +135,67 @@ a:hover {
     }
 }
 
-.aboutText {
-    padding: 1rem;
-}
+/* Laptop */
 
 @media (min-width: 1024px) {
+    .mainLogo {
+        max-width: 25%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: inline-flex;
+    }
+    .mainTitle {
+        max-width: fit-content;
+        display: inline-flex;
+        line-height: 1.5em;
+        vertical-align: middle;
+        font-size: 1.7em;
+    }
+    .nav-link {
+        font-size: 1.5em;
+        font-family: 'Bebas Neue', cursive;
+    }
     .aboutTitle,
     .contactHeader {
-        padding: 1rem;
-        font-weight: 700;
+        padding: .1rem;
+        font-weight: 600;
     }
     .aboutText {
-        font-size: 1.2em;
-        padding: 2rem;
-    }
-    .socialTitle {
+        font-size: 1.1em;
+        margin-top: 1rem;
         padding: 1rem;
     }
-    
+    .socialTitle {
+        padding: .1rem;
+    }
+    .contactHeader {
+        padding: 1rem;
+        padding-bottom: 0;
+    }
 }
 
+/* Desktop */
+
 @media (min-width: 1440px) {
+    .mainLogo {
+        max-width: 25%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: inline-flex;
+    }
+    .mainTitle {
+        max-width: fit-content;
+        display: inline-flex;
+        line-height: 1.5em;
+        vertical-align: middle;
+        font-size: 3em;
+    }
+    .nav-link {
+        font-size: 1.9em;
+        font-family: 'Bebas Neue', cursive;
+    }
     .aboutText {
         font-size: 1.5em;
         padding: 3rem 3rem 0;
     }
-}
-
-.aboutImage {
-    max-width: 130%;
-    -webkit-transform: scaleX(-1)
-
-}
-
-/* Socials */
-
-/* Contact */
-
-.contactLabel {
-    font-size: small;
-    padding: .2rem;
-    margin-bottom: .75rem;
-}
-
-.contactContainer {
-    margin: 0 auto;
 }
