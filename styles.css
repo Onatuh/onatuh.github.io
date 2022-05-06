@@ -1,0 +1,186 @@
+/* Body Elements */
+
+body {
+    overflow-x: hidden;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 900;
+    line-height: 1;
+    color: #4A9428;
+}
+
+h2,
+h3,
+p {
+    margin-bottom: 1em;
+}
+
+h6 {
+    font-size: smaller;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1;
+    padding: .2rem;
+    margin-bottom: -.2rem;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1;
+}
+
+img {
+    max-width: 100%;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #4A9428 !important;
+    font-family: 'Bebas Neue', cursive;
+}
+
+a:hover { 
+    -webkit-transform: scale(1.2); 
+}
+
+/* Bootstrap */
+
+
+/* Wrappers and Headers */
+
+.aboutWrapper,
+.contactWrapper {
+    background-color: #4A9428;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.socialWrapper {
+    padding: 1rem;
+}
+
+.contactHeader,
+.aboutTitle {
+    color: #ffffff;
+}
+
+.footerWrapper {
+    text-align: center;
+}
+
+.socialTitle {
+    text-align: center;
+    margin-bottom: -1rem;
+}
+
+/* Navigation */
+
+@media (max-width: 768px) {
+    .landingContent {
+        display: flex;
+        max-width: min-content;
+        padding: 1.5rem;
+    }
+    .navMenu {
+        border-top: 2px solid #4A9428;
+    }
+    .mainLogo {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .mainLogo {
+        max-width: 50%;
+        padding-top: 2rem;
+        display: inline-flex;
+    }
+    .mainTitle {
+        max-width: fit-content;
+        display: inline-flex;
+        line-height: 1.5em;
+        vertical-align: middle;
+    }
+    .nav-link {
+        font-size: 1.2em;
+        font-family: 'Bebas Neue', cursive;
+    }
+}
+
+.mainTitle {
+    align-items: center;
+}
+
+/* About */
+
+@media (max-width: 768px) {
+    .aboutTitle,
+    .contactHeader {
+        padding: 1rem;
+        font-weight: 500;
+    }
+    .aboutImage {
+        display: none;
+    }
+}
+
+.aboutText {
+    padding: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .aboutTitle,
+    .contactHeader {
+        padding: 1rem;
+        font-weight: 700;
+    }
+    .aboutText {
+        font-size: 1.2em;
+        padding: 2rem;
+    }
+    .socialTitle {
+        padding: 1rem;
+    }
+    
+}
+
+@media (min-width: 1440px) {
+    .aboutText {
+        font-size: 1.5em;
+        padding: 3rem 3rem 0;
+    }
+}
+
+.aboutImage {
+    max-width: 130%;
+    -webkit-transform: scaleX(-1)
+
+}
+
+/* Socials */
+
+/* Contact */
+
+.contactLabel {
+    font-size: small;
+    padding: .2rem;
+    margin-bottom: .75rem;
+}
+
+.contactContainer {
+    margin: 0 auto;
+}
