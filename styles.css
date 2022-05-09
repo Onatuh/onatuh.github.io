@@ -119,11 +119,14 @@ a:hover {
         max-width: min-content;
         padding: 1.5rem;
     }
+    .mainTitle {
+        display: flex;
+    }
     .navMenu {
         border-top: 2px solid #4A9428;
     }
     .mainLogo {
-        max-width: 100%;
+        max-width: 90%;
     }
     .aboutTitle,
     .contactHeader {
@@ -139,7 +142,7 @@ a:hover {
 
 @media (min-width: 1024px) {
     .mainLogo {
-        max-width: 25%;
+        max-width: 30%;
         padding-top: 1rem;
         padding-bottom: 1rem;
         display: inline-flex;
@@ -149,7 +152,7 @@ a:hover {
         display: inline-flex;
         line-height: 1.5em;
         vertical-align: middle;
-        font-size: 1.7em;
+        font-size: 1.9em;
     }
     .nav-link {
         font-size: 1.5em;
@@ -159,6 +162,7 @@ a:hover {
     .contactHeader {
         padding: .1rem;
         font-weight: 600;
+        padding-top: 1rem;
     }
     .aboutText {
         font-size: 1.1em;
@@ -178,7 +182,7 @@ a:hover {
 
 @media (min-width: 1440px) {
     .mainLogo {
-        max-width: 25%;
+        max-width: 30%;
         padding-top: 2rem;
         padding-bottom: 2rem;
         display: inline-flex;
@@ -191,7 +195,7 @@ a:hover {
         font-size: 3em;
     }
     .nav-link {
-        font-size: 1.9em;
+        font-size: 2.3em;
         font-family: 'Bebas Neue', cursive;
     }
     .aboutText {
